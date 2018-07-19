@@ -58,4 +58,10 @@ nnoremap P P=`]<C-o>
 inoremap jk <Esc>          " Leave insert mode by typing 'jk'
 colorscheme onedark
 
+" Create a BuildCtags VIM command
+command BuildCtags execute "!build_ctags.sh > /dev/null"
+
+" Build ctags on VimEnter
+autocmd VimEnter * :silent BuildCtags
+
 execute pathogen#infect()
