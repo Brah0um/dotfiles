@@ -1,8 +1,12 @@
 set nocompatible
 
 filetype plugin indent on   " Load plugin according to detected filetype.
-syntax on                   " Enable syntax highlighting.
 
+" Add optional packages.
+packadd! onedark
+
+syntax on                   " Enable syntax highlighting.
+colorscheme onedark
 
 set autoindent              " Indent according to previous line.
 set expandtab               " Use spaces instead of tabs.
@@ -49,19 +53,12 @@ set listchars=tab:→\ ,space:⋅,nbsp:¤,trail:⋅,extends:❯,precedes:❮
 autocmd ColorScheme * highlight WhiteSpaces gui=undercurl guifg=LightGray | match WhiteSpaces / \+/
 
 " Ignore some files with specific extension
-set wildignore+=*/dist/*,*/node_modules/*,*/cache/*,composer.phar,*/DoctrineMigrations/*,*/logs/*,*.png,*.jpeg,*.jpg,*.swp
+set wildignore+=*/dist/*,*/node_modules/*,*/cache/*,composer.phar,*/logs/*,*.png,*.jpeg,*.jpg,*.swp
 
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
 
 inoremap jk <Esc>          " Leave insert mode by typing 'jk'
-colorscheme onedark
 
-" Create a BuildCtags VIM command
-command BuildCtags execute "!build_ctags.sh > /dev/null"
-
-" Build ctags on VimEnter
-autocmd VimEnter * :silent BuildCtags
-
-execute pathogen#infect()
+autocmd BufEnter * :syntax sync fromstart
