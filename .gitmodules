@@ -4,3 +4,6 @@
 [submodule ".vim/pack/bundle/start/vim-cheat40"]
 	path = .vim/pack/bundle/start/vim-cheat40
 	url = https://github.com/lifepillar/vim-cheat40
+[submodule ".vim/pack/bundle/opt/onedark"]
+	path = .vim/pack/bundle/opt/onedark
+	url = https://github.com/joshdick/onedark.vim
