@@ -1,3 +1,6 @@
 [submodule ".vim/pack/bundle/start/vim-gutentags"]
 	path = .vim/pack/bundle/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags
+[submodule ".vim/pack/bundle/start/vim-cheat40"]
+	path = .vim/pack/bundle/start/vim-cheat40
+	url = https://github.com/lifepillar/vim-cheat40
