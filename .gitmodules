@@ -7,3 +7,9 @@
 [submodule ".vim/pack/bundle/opt/onedark"]
 	path = .vim/pack/bundle/opt/onedark
 	url = https://github.com/joshdick/onedark.vim
+[submodule ".vim/pack/bundle/start/surround"]
+	path = .vim/pack/bundle/start/surround
+	url = https://tpope.io/vim/surround.git
+[submodule ".vim/pack/bundle/start/repeat"]
+	path = .vim/pack/bundle/start/repeat
+	url = https://tpope.io/vim/repeat.git
