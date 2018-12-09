@@ -55,6 +55,16 @@ autocmd ColorScheme * highlight WhiteSpaces gui=undercurl guifg=LightGray | matc
 " Ignore some files with specific extension
 set wildignore+=*/dist/*,*/node_modules/*,*/cache/*,composer.phar,*/logs/*,*.png,*.jpeg,*.jpg,*.swp
 
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>

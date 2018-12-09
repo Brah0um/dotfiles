@@ -25,3 +25,6 @@
 [submodule ".vim/pack/bundle/start/vim-vue"]
 	path = .vim/pack/plugins/start/vim-vue
 	url = git://github.com/posva/vim-vue.git
+[submodule ".vim/pack/plugins/start/syntastic"]
+	path = .vim/pack/plugins/start/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git
