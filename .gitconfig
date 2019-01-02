@@ -1,0 +1,11 @@
+[user]
+	email = boukoufallah.brahim@gmail.com
+	name = Brahim Boukoufallah
+[core]
+	editor = vim
+	excludesfile = ~/.gitconfig.d/gitignore
+[help]
+	autocorrect = 1
+[pager]
+	branch = false
+	tag = false
