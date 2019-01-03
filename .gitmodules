@@ -28,3 +28,6 @@
 [submodule ".vim/pack/plugins/start/syntastic"]
 	path = .vim/pack/plugins/start/syntastic
 	url = git@github.com:vim-syntastic/syntastic.git
+[submodule ".vim/pack/plugins/start/vim-toto-lists"]
+	path = .vim/pack/plugins/start/vim-toto-lists
+	url = git@github.com:aserebryakov/vim-todo-lists.git
